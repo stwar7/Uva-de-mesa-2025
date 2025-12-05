@@ -1,6 +1,6 @@
 # Sensibilidad del raquis de uva de mesa a la deshidratación en función de factores de precosecha.
 
-Este repositorio presenta un análisis visual basado en la conversión de imágenes RGB al espacio de color CIELAB para evaluar la sensibilidad del raquis de uva de mesa a la deshidratación en función de distintos factores de precosecha. El análisis fue desarrollado en Python y se centra en comprender cómo las características iniciales del raquis influyen en su comportamiento durante la deshidratación poscosecha.
+Este repositorio contiene el código, las bases de datos y los documentos asociados al proyecto de investigación titulado “Determinación de la sensibilidad del raquis a la deshidratación en postcosecha basada en parámetros de cosecha”, desarrollado en el marco de estudios avanzados en fisiología vegetal y poscosecha de uva de mesa (Vitis vinifera L.).
 
 ![Análisis de imágenes en el software python, separados por máscaras de porcentaje de verde, amarrillo y rojo](Figuras/Mascara_porcentaje.png)
 
@@ -46,10 +46,15 @@ uva-de-mesa-2025/
 │   └── pardeamiento_uva.qmd
 ```
 
-### Datos
-Los datos provienen de diferentes huertos de la zona central de chile de las varidades Allison y S.Celebration . 
+### Metodología resumida
+
+Material vegetal: racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales en la zona central de Chile.
+
+a. Factores experimentales: Categoría de color inicial del raquis (Verde, Amarillo).
+
+b. Mediciones:
+    Color digital (HUE, CIELAB).
+    Contenido Relativo de Agua (CRA %)
 
 ## Agradecimientos
-Esta investigación se realizo en el laboratio de poscosecha de la universidad de Chile y PRONABEC - Beca generación bicentenario, ademas a los productores que permitieron la recoleccion de fruta de su huertos. 
-
-
+Esta investigación se realizo en el laboratio de poscosecha de la universidad de Chile y PRONABEC - Beca generación bicentenario.
