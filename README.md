@@ -50,11 +50,12 @@ uva-de-mesa-2025/
 
 Material vegetal: racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales en la zona central de Chile.
 
-a. Factores experimentales: Categoría de color inicial del raquis (Verde, Amarillo).
+   #### a. Factores experimentales: 
+            Categoría de color inicial del raquis (Verde, Amarillo).
 
-b. Mediciones:
-    Color digital (HUE, CIELAB).
-    Contenido Relativo de Agua (CRA %)
+   #### b. Mediciones:
+            Color digital (HUE, CIELAB).
+            Contenido Relativo de Agua (CRA %)
 
 ## Agradecimientos
 Esta investigación se realizo en el laboratio de poscosecha de la universidad de Chile y PRONABEC - Beca generación bicentenario.
