@@ -1,6 +1,6 @@
-# Sensibilidad de la deshidratacion de raquiis de uva de mesa a partir de factores de precosecha.
+# Sensibilidad del raquis de uva de mesa a la deshidratación en función de factores de precosecha.
 
-Este repositorio presenta un fotografia de analisis visual de RGB a CIELAB para evaluar la sensibilidad de la deshidratacion del raquis de uva de mesa a partir de factores de precosecha. El analisis fue realizado usando Python y se enfoca en la relacion entre las caracterisiticas del raquis en la deshidratacion poscosecha. 
+Este repositorio presenta un análisis visual basado en la conversión de imágenes RGB al espacio de color CIELAB para evaluar la sensibilidad del raquis de uva de mesa a la deshidratación en función de distintos factores de precosecha. El análisis fue desarrollado en Python y se centra en comprender cómo las características iniciales del raquis influyen en su comportamiento durante la deshidratación poscosecha.
 
 ![Análisis de imágenes en el software python, separados por máscaras de porcentaje de verde, amarrillo y rojo](Figuras/Mascara_porcentaje.png)
 
@@ -24,7 +24,8 @@ Este repositorio está dirigido a estudiantes, investigadores y profesionales co
 
 
 ## 🗺️ Estructura del proyecto
-El repositorio cuenta con dos carpetas principales: _code_ y _data_, que en conjunto tienen todos los archivos necesarios para reproducir el análisis exploratorio. Las carpetas _docs_, _figures_ y _quarto-website_ se utilizan para elaborar la página web con los resultados del análisis.
+El repositorio cuenta con dos carpetas principales: Datos y Scripts
+
 
 ``` text
 uva-de-mesa-2025/
