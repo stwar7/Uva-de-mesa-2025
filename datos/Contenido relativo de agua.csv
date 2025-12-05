@@ -1,20 +1,20 @@
 ﻿Ensayo;Variedad;Productor;Fecha cosecha;Tipo de evaluación;Fecha de evaluación;Evaluación;Color;Tratamientos;Racimo consecutivo;Identificación;Repetición;Racimo;CAR
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;A;3H;1;T0-0;R1;1;89.11
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;A;3H;2;T0-0;R2;1;88.05
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;A;3H;3;T0-0;R3;1;85.45
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;A;3H;4;T0-0;R4;1;87.32
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;V;3H;1;T0-0;R1;1;89.87
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;V;3H;2;T0-0;R2;1;89.5
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;V;3H;3;T0-0;R3;1;90.83
-Atraso;SC;Palo Alto;45709;Inicial;45709;T0;V;3H;4;T0-0;R4;1;88.21
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;A;18H;1;T0-0;R1;1;81.35
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;A;18H;2;T0-0;R2;1;81.25
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;A;18H;3;T0-0;R3;1;78.88
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;A;18H;4;T0-0;R4;1;81.97
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;V;18H;1;T0-0;R1;1;77.48
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;V;18H;2;T0-0;R2;1;81.18
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;V;18H;3;T0-0;R3;1;80.4
-Atraso;SC;Palo Alto;45709;Inicial;45710;T0;V;18H;4;T0-0;R4;1;83.2
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;A;3H;1;T0-0;R1;1;89.11
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;A;3H;2;T0-0;R2;1;88.05
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;A;3H;3;T0-0;R3;1;85.45
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;A;3H;4;T0-0;R4;1;87.32
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;V;3H;1;T0-0;R1;1;89.87
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;V;3H;2;T0-0;R2;1;89.5
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;V;3H;3;T0-0;R3;1;90.83
+Atraso;SC;Palo alto;45709;Inicial;45709;T0;V;3H;4;T0-0;R4;1;88.21
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;A;18;1;T0-0;R1;1;81.35
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;A;18;2;T0-0;R2;1;81.25
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;A;18;3;T0-0;R3;1;78.88
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;A;18;4;T0-0;R4;1;81.97
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;V;18;1;T0-0;R1;1;77.48
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;V;18;2;T0-0;R2;1;81.18
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;V;18;3;T0-0;R3;1;80.4
+Atraso;SC;Palo alto;45709;Inicial;45710;T0;V;18;4;T0-0;R4;1;83.2
 Atraso;SC;Walpon;45714;Inicial;45714;T0;A;0H;1;T0-0;R1;1;87
 Atraso;SC;Walpon;45714;Inicial;45714;T0;A;0H;2;T0-0;R2;1;84.18
 Atraso;SC;Walpon;45714;Inicial;45714;T0;A;0H;3;T0-0;R3;1;83.82
@@ -31,38 +31,38 @@ Atraso;SC;Walpon;45714;Inicial;45714;T0;V;3H;1;T0-0;R1;1;80.68
 Atraso;SC;Walpon;45714;Inicial;45714;T0;V;3H;2;T0-0;R2;1;83.24
 Atraso;SC;Walpon;45714;Inicial;45714;T0;V;3H;3;T0-0;R3;1;83.18
 Atraso;SC;Walpon;45714;Inicial;45714;T0;V;3H;4;T0-0;R4;1;86.08
-Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18H;1;T0-0;R1;1;78.57
-Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18H;2;T0-0;R2;1;74.04
-Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18H;3;T0-0;R3;1;73.46
-Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18H;4;T0-0;R4;1;77.09
-Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18H;1;T0-0;R1;1;79.28
-Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18H;2;T0-0;R2;1;73.38
-Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18H;3;T0-0;R3;1;79.67
-Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18H;4;T0-0;R4;1;75.35
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;A;0H;1;T0-0;R1;1;83.21
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;A;0H;2;T0-0;R2;1;81.8
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;A;0H;3;T0-0;R3;1;85.2
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;A;0H;4;T0-0;R4;1;82.62
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;V;0H;1;T0-0;R1;1;83.22
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;V;0H;2;T0-0;R2;1;85.82
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;V;0H;3;T0-0;R3;1;85.66
-Atraso;AL;Los bronces;45722;Inicial;45722;E00;V;0H;4;T0-0;R4;1;83.61
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;A;3H;1;T0-0;R1;1;77.1
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;A;3H;2;T0-0;R2;1;77.2
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;A;3H;3;T0-0;R3;1;81.8
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;A;3H;4;T0-0;R4;1;83.7
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;V;3H;1;T0-0;R1;1;81.65
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;V;3H;2;T0-0;R2;1;81.22
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;V;3H;3;T0-0;R3;1;82.37
-Atraso;AL;Los bronces;45722;Inicial;45722;E03;V;3H;4;T0-0;R4;1;78.94
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;A;18H;1;T0-0;R1;1;65.48
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;A;18H;2;T0-0;R2;1;72.26
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;A;18H;3;T0-0;R3;1;65.12
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;A;18H;4;T0-0;R4;1;65.69
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;V;18H;1;T0-0;R1;1;71.51
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;V;18H;2;T0-0;R2;1;69.26
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;V;18H;3;T0-0;R3;1;72.06
-Atraso;AL;Los bronces;45722;Inicial;45723;E18;V;18H;4;T0-0;R4;1;71.67
+Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18;1;T0-0;R1;1;78.57
+Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18;2;T0-0;R2;1;74.04
+Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18;3;T0-0;R3;1;73.46
+Atraso;SC;Walpon;45714;Inicial;45715;T0;A;18;4;T0-0;R4;1;77.09
+Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18;1;T0-0;R1;1;79.28
+Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18;2;T0-0;R2;1;73.38
+Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18;3;T0-0;R3;1;79.67
+Atraso;SC;Walpon;45714;Inicial;45715;T0;V;18;4;T0-0;R4;1;75.35
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;A;0H;1;T0-0;R1;1;83.21
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;A;0H;2;T0-0;R2;1;81.8
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;A;0H;3;T0-0;R3;1;85.2
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;A;0H;4;T0-0;R4;1;82.62
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;V;0H;1;T0-0;R1;1;83.22
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;V;0H;2;T0-0;R2;1;85.82
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;V;0H;3;T0-0;R3;1;85.66
+Atraso;AL;Los Bronces;45722;Inicial;45722;E00;V;0H;4;T0-0;R4;1;83.61
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;A;3H;1;T0-0;R1;1;77.1
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;A;3H;2;T0-0;R2;1;77.2
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;A;3H;3;T0-0;R3;1;81.8
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;A;3H;4;T0-0;R4;1;83.7
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;V;3H;1;T0-0;R1;1;81.65
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;V;3H;2;T0-0;R2;1;81.22
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;V;3H;3;T0-0;R3;1;82.37
+Atraso;AL;Los Bronces;45722;Inicial;45722;E03;V;3H;4;T0-0;R4;1;78.94
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;A;18;1;T0-0;R1;1;65.48
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;A;18;2;T0-0;R2;1;72.26
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;A;18;3;T0-0;R3;1;65.12
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;A;18;4;T0-0;R4;1;65.69
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;V;18;1;T0-0;R1;1;71.51
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;V;18;2;T0-0;R2;1;69.26
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;V;18;3;T0-0;R3;1;72.06
+Atraso;AL;Los Bronces;45722;Inicial;45723;E18;V;18;4;T0-0;R4;1;71.67
 Atraso;AL;San Vicente;45729;Inicial;45729;E00;A;0H;1;T0-0;R1;1;90.43
 Atraso;AL;San Vicente;45729;Inicial;45729;E00;A;0H;2;T0-0;R2;1;88.39
 Atraso;AL;San Vicente;45729;Inicial;45729;E00;A;0H;3;T0-0;R3;1;87.56
@@ -79,35 +79,35 @@ Atraso;AL;San Vicente;45729;Inicial;45729;E03;V;3H;1;T0-0;R1;1;88.74
 Atraso;AL;San Vicente;45729;Inicial;45729;E03;V;3H;2;T0-0;R2;1;88.7
 Atraso;AL;San Vicente;45729;Inicial;45729;E03;V;3H;3;T0-0;R3;1;87.76
 Atraso;AL;San Vicente;45729;Inicial;45729;E03;V;3H;4;T0-0;R4;1;89.29
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18H;1;T0-0;R1;1;71.09
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18H;2;T0-0;R2;1;73.39
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18H;3;T0-0;R3;1;74.36
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18H;4;T0-0;R4;1;72.52
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18H;1;T0-0;R1;1;73.26
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18H;2;T0-0;R2;1;73.07
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18H;3;T0-0;R3;1;73.57
-Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18H;4;T0-0;R4;1;73.29
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;A;0H;1;T0-0;R1;1;84.66
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;A;0H;2;T0-0;R2;1;81.7
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;A;0H;3;T0-0;R3;1;85.36
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;A;0H;4;T0-0;R4;1;83.68
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;V;0H;1;T0-0;R1;1;84.76
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;V;0H;2;T0-0;R2;1;84.51
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;V;0H;3;T0-0;R3;1;87.01
-Atraso;AL;El Delirio;45736;Inicial;45736;E00;V;0H;4;T0-0;R4;1;85.94
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;A;3H;1;T0-0;R1;1;80.81
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;A;3H;2;T0-0;R2;1;82.09
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;A;3H;3;T0-0;R3;1;78.91
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;A;3H;4;T0-0;R4;1;80.19
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;V;3H;1;T0-0;R1;1;82.24
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;V;3H;2;T0-0;R2;1;81.57
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;V;3H;3;T0-0;R3;1;82.97
-Atraso;AL;El Delirio;45736;Inicial;45736;E03;V;3H;4;T0-0;R4;1;84.86
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;A;18H;1;T0-0;R1;1;69.57
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;A;18H;2;T0-0;R2;1;67.3
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;A;18H;3;T0-0;R3;1;63.81
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;A;18H;4;T0-0;R4;1;70.19
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;V;18H;1;T0-0;R1;1;67.67
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;V;18H;2;T0-0;R2;1;64.15
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;V;18H;3;T0-0;R3;1;72.1
-Atraso;AL;El Delirio;45736;Inicial;45737;E18;V;18H;4;T0-0;R4;1;70.49
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18;1;T0-0;R1;1;71.09
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18;2;T0-0;R2;1;73.39
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18;3;T0-0;R3;1;74.36
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;A;18;4;T0-0;R4;1;72.52
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18;1;T0-0;R1;1;73.26
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18;2;T0-0;R2;1;73.07
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18;3;T0-0;R3;1;73.57
+Atraso;AL;San Vicente;45729;Inicial;45730;E18;V;18;4;T0-0;R4;1;73.29
+Atraso;AL;Delirio;45736;Inicial;45736;E00;A;0H;1;T0-0;R1;1;84.66
+Atraso;AL;Delirio;45736;Inicial;45736;E00;A;0H;2;T0-0;R2;1;81.7
+Atraso;AL;Delirio;45736;Inicial;45736;E00;A;0H;3;T0-0;R3;1;85.36
+Atraso;AL;Delirio;45736;Inicial;45736;E00;A;0H;4;T0-0;R4;1;83.68
+Atraso;AL;Delirio;45736;Inicial;45736;E00;V;0H;1;T0-0;R1;1;84.76
+Atraso;AL;Delirio;45736;Inicial;45736;E00;V;0H;2;T0-0;R2;1;84.51
+Atraso;AL;Delirio;45736;Inicial;45736;E00;V;0H;3;T0-0;R3;1;87.01
+Atraso;AL;Delirio;45736;Inicial;45736;E00;V;0H;4;T0-0;R4;1;85.94
+Atraso;AL;Delirio;45736;Inicial;45736;E03;A;3H;1;T0-0;R1;1;80.81
+Atraso;AL;Delirio;45736;Inicial;45736;E03;A;3H;2;T0-0;R2;1;82.09
+Atraso;AL;Delirio;45736;Inicial;45736;E03;A;3H;3;T0-0;R3;1;78.91
+Atraso;AL;Delirio;45736;Inicial;45736;E03;A;3H;4;T0-0;R4;1;80.19
+Atraso;AL;Delirio;45736;Inicial;45736;E03;V;3H;1;T0-0;R1;1;82.24
+Atraso;AL;Delirio;45736;Inicial;45736;E03;V;3H;2;T0-0;R2;1;81.57
+Atraso;AL;Delirio;45736;Inicial;45736;E03;V;3H;3;T0-0;R3;1;82.97
+Atraso;AL;Delirio;45736;Inicial;45736;E03;V;3H;4;T0-0;R4;1;84.86
+Atraso;AL;Delirio;45736;Inicial;45737;E18;A;18;1;T0-0;R1;1;69.57
+Atraso;AL;Delirio;45736;Inicial;45737;E18;A;18;2;T0-0;R2;1;67.3
+Atraso;AL;Delirio;45736;Inicial;45737;E18;A;18;3;T0-0;R3;1;63.81
+Atraso;AL;Delirio;45736;Inicial;45737;E18;A;18;4;T0-0;R4;1;70.19
+Atraso;AL;Delirio;45736;Inicial;45737;E18;V;18;1;T0-0;R1;1;67.67
+Atraso;AL;Delirio;45736;Inicial;45737;E18;V;18;2;T0-0;R2;1;64.15
+Atraso;AL;Delirio;45736;Inicial;45737;E18;V;18;3;T0-0;R3;1;72.1
+Atraso;AL;Delirio;45736;Inicial;45737;E18;V;18;4;T0-0;R4;1;70.49

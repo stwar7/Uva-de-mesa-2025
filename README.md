@@ -2,8 +2,7 @@
 
 Este repositorio presenta un fotografia de analisis visual de RGB a CIELAB para evaluar la sensibilidad de la deshidratacion del raquis de uva de mesa a partir de factores de precosecha. El analisis fue realizado usando Python y se enfoca en la relacion entre las caracterisiticas del raquis en la deshidratacion poscosecha. 
 
-docs/Figuras/Mascara_porcentaje.png
-
+![Análisis de imágenes en el software python, separados por máscaras de porcentaje de verde, amarrillo y rojo](Figuras/Mascara_porcentaje.png)
 
 ## Hipotesis 
 
@@ -16,13 +15,7 @@ Determinar la sensibilidad del raquis de uva de mesa a la deshidratación en pos
 
 
 ## Audiencia
-
 Este repositorio está dirigido a estudiantes, investigadores y profesionales con interés en:
-- Visualización de analisis digital con el fin de
-- El uso de Python para la automatización de análisis y visualización de datos ambientales
-- El análisis estadístico de series temporales de datos ambientales
-
-## Audiencia
 
 - La evaluación digital del color y la sensibilidad al pardeamiento del raquis en uva de mesa mediante análisis RGB–CIELAB.
 - El desarrollo de modelos predictivos para cuantificar el riesgo de deshidratación y deterioro del raquis a partir de parámetros medidos en precosecha.
@@ -50,8 +43,6 @@ uva-de-mesa-2025/
 ├── Scripts/
 │   ├── pardeamiento_uva.ipynb
 │   └── pardeamiento_uva.qmd
-│
-
 ```
 
 ### Datos
