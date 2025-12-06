@@ -58,4 +58,4 @@ Material vegetal: racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebrat
             Contenido Relativo de Agua (CRA %)
 
 ## Agradecimientos
-Esta investigación se realizo en el laboratio de poscosecha de la universidad de Chile y PRONABEC - Beca generación bicentenario.
+Esta investigación se realizo en el laboratio de poscosecha UC y PRONABEC - Beca generación bicentenario.
