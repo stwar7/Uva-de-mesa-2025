@@ -1,9 +1,11 @@
 {
-  "index.qmd": {
-    "index.html": "e6db94d8"
+  "scripts/pardeamiento_uva.qmd": {
+    "pardeamiento_uva.html": "7101a0a8"
   },
-  "pardeamiento_uva.qmd": {
-    "pardeamiento_uva.html": "852f0024",
-    "pardeamiento_uva.tex": "a1d413aa"
+  "Websitio/about.qmd": {
+    "about.html": "54fbe595"
+  },
+  "Websitio/index.qmd": {
+    "index.html": "eea2e93f"
   }
 }
