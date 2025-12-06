@@ -1,10 +1,10 @@
 ---
 title: ' DETERMINACIÓN DE LA SENSIBILIDAD DEL RAQUIS A LA DESHIDRATACIÓN EN POSCOSECHA BASADA EN PARÁMETROS DE COSECHA'
 author: "Jhonatan Loayza"
-format: 
-  pdf: 
+format:
+  pdf:
     documentclass: report
-    classoption: [twocolumn, landscape]
+    classoption: [landscape]
     lof: true
     lot: true
     geometry:
@@ -14,6 +14,11 @@ format:
     mainfont: Times New Roman
     colorlinks: true
 ---
+
+## Introduccion 
+El proceso de pardeamiento es un fenómeno natural que ocurre en frutas y verduras, que se ha convertido en un desafío en el sector de la industria alimentaria.La aparición de reacciones de pardeamiento de los alimentos generalmente afecta la apariencia del color de los alimentos y reduce notablemente la aceptación de los productos por parte del cliente.Actualmente, la determinación del momento de cosecha en uva de mesa se basa principalmente en parámetros de madurez como el contenido de sólidos solubles (°Brix) y la acidez titulable, sin considerar el estado fisiológico del raquis en el proceso de recolección. Sin embargo, se ha evidenciado que el cambio de color del raquis ocurre de manera paralela a la maduración de las bayas y se asocia directamente con la disminución del contenido relativo de agua (CAR) del tejido (Fang et al., 2015).
+
+
 
 
 ```{python}
@@ -32,7 +37,7 @@ from sklearn.linear_model import LinearRegression
 ## Resultados
 
 ### 1. Caracterizacion inicial a cosecha 
-
+La cosecha se realizó en el estado de madurez determinado por cada productor, siguiendo los criterios comerciales establecidos para uva de mesa (Tabla 1). Los sólidos solubles totales (STT) fluctuaron entre 17 % - 19%, mientras que la acidez titulable se mantuvo en rangos (0.51 % - 0.78%). Es importante destacar que la firmeza de la baya presento variabilidad entre cultivares, destacando Sweet Globe con la mayor firmeza (652.46 g mm-1).  
 ```{python}
 print('Tabla 1: Caracterizacion inicial en cosecha, cv. Allison y S. Celebretion.(media ± DE)')
 
@@ -73,6 +78,10 @@ print(tabla_resumen)
 ```
 
 ### 2. Relación de acuedo hue inicial, Contenido Relativo del agua
+
+Los valores iniciales de Hue (°) del raquis mostraron una fuerte relaciona negativa con la intensidad del pardeamiento después de 10 días a 0°C . Indicando que valores de Hue (°) más bajos (desplazamiento hacia el amarillo) están asociado con un mayor oscurecimiento durante el almacenamiento en poscosecha. 
+
+El Contenido Relativo de Agua (CRA), mostró una relación inversa consistente con el pardeamiento del raquis en los  2 cultivares evaluados. Durante el almacenamiento 10 días a 0 °C la relación fue especialmente fuerte en Allison (R² = 0.85), Sweet Celebration  (R² = 0.78) 
 
 ```{python}
 # 1. Cargamos archivos 
@@ -247,7 +256,7 @@ plt.show()
 
 ### 3. Almacenamiento comercial en postcosecha. 
 
-Revisara si las varibles de acuerdo el color en cosecha influyen en el pardeamiento del raquis de uva de mesa de amabas variedades. 
+El pardeamiento del raquis aumentó consistentemente con el tiempo de almacenamiento comercial en ambas variedades evaluadas. ‘Allison’ mostró niveles iniciales más altos y una progresión más marcada del oscurecimiento respecto de ‘Sweet Celebration’. Asimismo, los racimos clasificados con raquis amarillo (A) tendieron a presentar mayor área parda que aquellos con raquis verde (V), lo que confirma la relevancia del color inicial como indicador fisiológico de la sensibilidad al pardeamiento durante la poscosecha.
 
 ```{python}
 
