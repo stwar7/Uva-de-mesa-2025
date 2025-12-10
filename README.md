@@ -30,32 +30,37 @@ El repositorio cuenta con dos carpetas principales: Datos y Scripts
 ``` text
 uva-de-mesa-2025/
 ├── README.md
-├── Datos/
+├── LICENSE
+├── .gitignore
+├── .nojekyll
+│
+├── datos/
 │   ├── Almacenamiento comercial.csv
 │   ├── Base de datos.xlsx
 │   ├── caracterizacion inicial.xlsx
 │   ├── Contenido relativo de agua.csv
+│   ├── Cosecha.csv
 │   └── Pardeamiento uva de mesa.csv
 │
-├── docs/
-│   └── Figuras/
-│       └── Imagen1.png
-│
-├── Scripts/
+├── Figuras/
+│   ├── Mascara_porcentaje.png
+│   
+├── scripts/
 │   ├── pardeamiento_uva.ipynb
-│   └── pardeamiento_uva.qmd
+│   ├── pardeamiento_uva.qmd
+│   └── pardeamiento_uva.pdf
+
 ```
 
 ### Metodología resumida
 
-Material vegetal: racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales en la zona central de Chile.
+Material vegetal: Racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales en la zona central de Chile.
 
    #### a. Factores experimentales: 
-            Categoría de color inicial del raquis (Verde, Amarillo).
+   -  Categoría de color inicial del raquis (Verde, Amarillo).
 
    #### b. Mediciones:
-            Color digital (HUE, CIELAB).
-            Contenido Relativo de Agua (CRA %)
-
+   -  Color digital (HUE, CIELAB).
+   -  Contenido Relativo de Agua (CRA %) 
 ## Agradecimientos
 Esta investigación se realizo en el laboratio de poscosecha UC y PRONABEC - Beca generación bicentenario.
