@@ -57,9 +57,10 @@ uva-de-mesa-2025/
 
 ### Metodología resumida
 
-Material vegetal: Racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales en la zona central de Chile.
+- Material vegetal: Racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales de la zona central de Chile.
+
 ![Metodologia_Experimental](Figuras/Metodologia_Experemintal.png)
 
 
 ## Agradecimientos
-Esta investigación se realizo en el laboratio de poscosecha UC y PRONABEC - Beca generación bicentenario.
+Esta investigación se desarrolló en el Laboratorio de Poscosecha de la Pontificia Universidad Católica de Chile, espacio que proporcionó las condiciones experimentales, el equipamiento y el apoyo técnico necesarios para la ejecución de los ensayos y análisis asociados a este estudio.
