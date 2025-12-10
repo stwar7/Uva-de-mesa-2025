@@ -2,7 +2,7 @@
 
 El estudio se desarrolla en el marco de investigaciones avanzadas en fisiología vegetal y poscosecha de uva de mesa (Vitis vinifera L.), con el propósito de comprender cómo los factores de precosecha (características iniciales del raquis), influyen en la expresión del pardeamiento y la pérdida de agua durante almacenamiento poscosecha.
 
-Como parte del análisis, se emplean herramientas de segmentación digital de color (máscaras verde, amarillo y rojo) para cuantificar de manera objetiva la severidad del pardeamiento, permitiendo establecer relaciones cuantitativas entre el estado fisiológico del raquis en cosecha y su respuesta en poscosecha. 
+Como parte del análisis, se emplean herramientas de segmentación digital de color (máscaras verde, amarillo y rojo) para cuantificar de manera objetiva la severidad del pardeamiento, permitiendo establecer relaciones cuantitativas entre el estado fisiológico del raquis en cosecha y su respuesta en poscosecha. Los resultados obtenidos está disponible en la [página web](https://github.com/stwar7/Uva-de-mesa-2025).
 
 ![Análisis de imágenes en el software python, separados por máscaras de porcentaje de verde, amarrillo y rojo](Figuras/Mascara_porcentaje.png)
 
