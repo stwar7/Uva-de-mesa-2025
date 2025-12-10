@@ -5,6 +5,8 @@ toc: true
 format:
   html:
     self-contained: true
+    code-fold: true        
+    code-tools: true       
 execute:
   warning: false
 ---
@@ -30,11 +32,12 @@ from sklearn.linear_model import LinearRegression
 
 ## Resultados
 
-### 1. Caracterizacion inicial a cosecha 
-La cosecha se realizó en el estado de madurez determinado por cada productor, siguiendo los criterios comerciales establecidos para uva de mesa (Tabla 1). Los sólidos solubles totales (STT) fluctuaron entre 17 % - 19%, mientras que la acidez titulable se mantuvo en rangos (0.51 % - 0.78%). Es importante destacar que la firmeza de la baya presento variabilidad entre cultivares, destacando Sweet Globe con la mayor firmeza (652.46 g mm-1).  
+### 1. Caracterización inicial a cosecha 
+La cosecha se realizó en el estado de madurez determinado por cada productor, siguiendo los criterios comerciales establecidos para uva de mesa (Tabla 1). Los sólidos solubles totales (STT) fluctuaron entre 17 % - 19%, mientras que la acidez titulable se mantuvo en rangos  optmimos (0.51 % - 0.78%). 
 ```{python}
-print('Tabla 1: Caracterizacion inicial en cosecha, cv. Allison y S. Celebretion.(media ± DE)')
-
+#| echo: true
+#| code-fold: true
+#| fig-cap: 'Tabla 1. Caracterización inicial en cosecha, cv. Allison y S. Celebretion.(media ± DE)'
 Cosecha = pd.read_excel(r'../datos/caracterizacion inicial.xlsx')
 df = pd.DataFrame(Cosecha)
 
@@ -68,18 +71,21 @@ tabla_resumen = tabla_resumen.rename(columns={
     "Firmeza": "Firmeza (gf mm-1)"
 })
 
-print(tabla_resumen)
+tabla_resumen
 ```
 
-### 2. Relación de acuedo hue inicial, Contenido Relativo del agua
+### 2. Relación del hue inicial, Contenido Relativo del agua en cosecha.
 
-Los valores iniciales de Hue (°) del raquis mostraron una fuerte relaciona negativa con la intensidad del pardeamiento después de 10 días a 0°C . Indicando que valores de Hue (°) más bajos (desplazamiento hacia el amarillo) están asociado con un mayor oscurecimiento durante el almacenamiento en poscosecha. 
+Los valores iniciales de Hue (°) del raquis mostraron una fuerte relación negativa con la intensidad del pardeamiento después de 10 días a 0°C . Indicando que valores de Hue (°) más bajos (desplazamiento hacia el amarillo) están asociado con un mayor oscurecimiento durante el almacenamiento en poscosecha. 
 
-El Contenido Relativo de Agua (CRA), mostró una relación inversa consistente con el pardeamiento del raquis en los  2 cultivares evaluados. Durante el almacenamiento 10 días a 0 °C la relación fue especialmente fuerte en Allison (R² = 0.85), Sweet Celebration  (R² = 0.78) 
+El Contenido Relativo de Agua (CRA), mostró una relación inversa consistente con el pardeamiento del raquis en los  2 cultivares evaluados. Durante el almacenamiento 10 días a 0 °, la relación fuerte en Allison (R² = 0.85), Sweet Celebration  (R² = 0.78) 
 
 ```{python}
+#| echo: true
+#| code-fold: true
+#| fig-cap: 'Figura 1. Relacion de Hue (°) en cosecha  y el Hue(°) final despues de almacenamiento ( 10 dias a 0°C)'
+
 # 1. Cargamos archivos 
-# =====================================================================================
 datos_correlacion = pd.read_csv(r'../datos/Pardeamiento uva de mesa.csv', sep=';')
 
 df = pd.DataFrame(datos_correlacion)
@@ -167,9 +173,12 @@ plt.show()
 ```
 
 ```{python}
-# 2  Correlacion de acuerdo CRA vs pardeamiento -----------------------------------------------------------------------
-datos_CRA = pd.read_csv(r'../datos/Contenido relativo de agua.csv', sep=';')
 
+#| echo: true
+#| code-fold: true
+#| fig-cap: 'Figura 2. Relacion de acuerdo CRA (%) y el pardeameinto del raquis despues de almacenamiento ( 10 dias a 0°C)'
+
+datos_CRA = pd.read_csv(r'../datos/Contenido relativo de agua.csv', sep=';')
 #datos_CRA.info()
 
 #Calculamos el promedio  CAR en T0
@@ -248,12 +257,15 @@ plt.tight_layout()
 plt.show()
 ```
 
-### 3. Almacenamiento comercial en postcosecha. 
+### 3. Almacenamiento comercial en poscosecha. 
 
 El pardeamiento del raquis aumentó consistentemente con el tiempo de almacenamiento comercial en ambas variedades evaluadas. ‘Allison’ mostró niveles iniciales más altos y una progresión más marcada del oscurecimiento respecto de ‘Sweet Celebration’. Asimismo, los racimos clasificados con raquis amarillo (A) tendieron a presentar mayor área parda que aquellos con raquis verde (V), lo que confirma la relevancia del color inicial como indicador fisiológico de la sensibilidad al pardeamiento durante la poscosecha.
 
 ```{python}
 
+#| echo: true
+#| code-fold: true
+#| fig-cap: 'Figura 3. Almacenamiento comercial en poscosecha de acuerdo color inical  de raquis en cosecha'
 # 1. Cargar datos
 # ===================================================
 
@@ -316,3 +328,10 @@ plt.tight_layout()
 plt.show()
 ```
 
+## Conclusiones 
+
+La comprensión de los factores de precosecha es fundamental para explicar la respuesta poscosecha de cada cultivar. En este estudio, el color inicial del raquis mostró una relación consistente con la incidencia de pardeamiento durante el almacenamiento, la cual pudo describirse matemáticamente mediante el parámetro Hue digital. De igual forma, se evidenció una asociación significativa entre el contenido relativo de agua y la expresión del pardeamiento.
+
+Los raquis con tonalidades más amarillentas presentaron una mayor susceptibilidad al pardeamiento bajo condiciones comerciales de almacenamiento, lo que refuerza la importancia de considerar el estado fisiológico del tejido al momento de la cosecha.
+
+Finalmente, se destaca la necesidad de profundizar en investigaciones futuras que incluyan nuevos cultivares comerciales, con el fin de validar y ampliar la aplicabilidad de estos indicadores en la gestión poscosecha de la uva de mesa
