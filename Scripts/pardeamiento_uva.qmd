@@ -1,18 +1,12 @@
 ---
 title: ' DETERMINACIÓN DE LA SENSIBILIDAD DEL RAQUIS A LA DESHIDRATACIÓN EN POSCOSECHA BASADA EN PARÁMETROS DE COSECHA'
 author: "Jhonatan Loayza"
+toc: true
 format:
-  pdf:
-    documentclass: report
-    classoption: [landscape]
-    lof: true
-    lot: true
-    geometry:
-      - top=30mm
-      - left=20mm
-      - heightrounded
-    mainfont: Times New Roman
-    colorlinks: true
+  html:
+    self-contained: true
+execute:
+  warning: false
 ---
 
 ## Introduccion 
