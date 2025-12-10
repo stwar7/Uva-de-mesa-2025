@@ -11,7 +11,7 @@ La sensibilidad del raquis a la deshidratación en poscosecha estaría determina
 
 ## Objetivo 
 
-Determinar la sensibilidad del raquis de uva de mesa a la deshidratación en poscosecha a través de los cambios que ocurren en el color y contenido de agua de este tejido durante la cosecha.
+Determinar la sensibilidad del raquis de uva de mesa a la deshidratación en poscosecha a través de los cambios que ocurren en el color y contenido relativo de agua del raquis en la cosecha.
 
 ![Coloración de raqsuis en cosecha](<Figuras/Coloracion de raquis.png>)
 
@@ -44,8 +44,10 @@ uva-de-mesa-2025/
 │   └── Pardeamiento uva de mesa.csv
 │
 ├── Figuras/
+│   ├── Coloracion de raquis.png
 │   ├── Mascara_porcentaje.png
-│   
+│   └── Metodologia_Experimental.png
+│
 ├── scripts/
 │   ├── pardeamiento_uva.ipynb
 │   ├── pardeamiento_uva.qmd
@@ -56,12 +58,8 @@ uva-de-mesa-2025/
 ### Metodología resumida
 
 Material vegetal: Racimos de Vitis vinifera L. (‘Allison’, ‘Sweet Celebration’) provenientes de huertos comerciales en la zona central de Chile.
+![Metodologia_Experimental](Figuras/Metodologia_Experemintal.png)
 
-   #### a. Factores experimentales: 
-   -  Categoría de color inicial del raquis (Verde, Amarillo).
 
-   #### b. Mediciones:
-   -  Color digital (HUE, CIELAB).
-   -  Contenido Relativo de Agua (CRA %) 
 ## Agradecimientos
 Esta investigación se realizo en el laboratio de poscosecha UC y PRONABEC - Beca generación bicentenario.
