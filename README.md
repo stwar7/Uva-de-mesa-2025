@@ -13,6 +13,7 @@ La sensibilidad del raquis a la deshidratación en poscosecha estaría determina
 
 Determinar la sensibilidad del raquis de uva de mesa a la deshidratación en poscosecha a través de los cambios que ocurren en el color y contenido de agua de este tejido durante la cosecha.
 
+![Coloración de raqsuis en cosecha](<Figuras/Coloracion de raquis.png>)
 
 ## Audiencia
 Este repositorio está dirigido a estudiantes, investigadores y profesionales con interés en:
