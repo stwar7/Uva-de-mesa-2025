@@ -5,16 +5,13 @@ toc: true
 format:
   html:
     self-contained: true
-    code-fold: true        
-    code-tools: true       
+    code-fold: true           
 execute:
   warning: false
 ---
 
-## Introduccion 
-El proceso de pardeamiento es un fenómeno natural que ocurre en frutas y verduras, que se ha convertido en un desafío en el sector de la industria alimentaria.La aparición de reacciones de pardeamiento de los alimentos generalmente afecta la apariencia del color de los alimentos y reduce notablemente la aceptación de los productos por parte del cliente.Actualmente, la determinación del momento de cosecha en uva de mesa se basa principalmente en parámetros de madurez como el contenido de sólidos solubles (°Brix) y la acidez titulable, sin considerar el estado fisiológico del raquis en el proceso de recolección. Sin embargo, se ha evidenciado que el cambio de color del raquis ocurre de manera paralela a la maduración de las bayas y se asocia directamente con la disminución del contenido relativo de agua (CAR) del tejido (Fang et al., 2015).
-
-
+## Introducción 
+El pardeamiento es un fenómeno fisiológico común en frutas y hortalizas que afecta la apariencia y reduce la aceptación del consumidor, constituyendo un desafío relevante para la industria alimentaria. En uva de mesa, la cosecha se determina principalmente mediante parámetros de madurez como °Brix y acidez titulable, sin considerar el estado fisiológico del raquis, pese a su importancia para la vida poscosecha del racimo. Estudios recientes muestran que el cambio de color del raquis ocurre de forma paralela a la maduración de las bayas y se asocia con la disminución del contenido relativo de agua (CRA) del tejido, lo que favorece la degradación pigmentaria y la aparición de pardeamiento (Fang et al., 2015).
 
 
 ```{python}
@@ -76,34 +73,32 @@ tabla_resumen
 
 ### 2. Relación del hue inicial, Contenido Relativo del agua en cosecha.
 
-Los valores iniciales de Hue (°) del raquis mostraron una fuerte relación negativa con la intensidad del pardeamiento después de 10 días a 0°C . Indicando que valores de Hue (°) más bajos (desplazamiento hacia el amarillo) están asociado con un mayor oscurecimiento durante el almacenamiento en poscosecha. 
+La relación entre el color inicial del raquis (Hue en cosecha) y el color final tras 10 días de almacenamiento a 0 °C mostró un comportamiento diferencial entre las variedades evaluadas (Figura 1). En Allison (AL), el Hue inicial explicó de manera moderada la variación del Hue final (R² = 0.74), con una pendiente positiva (y = 1.39x – 17.31), lo que indica que los racimos con mayor tonalidad verde en cosecha mantuvieron valores más altos de Hue después del almacenamiento, aunque con una dispersión apreciable en los datos.
 
-El Contenido Relativo de Agua (CRA), mostró una relación inversa consistente con el pardeamiento del raquis en los  2 cultivares evaluados. Durante el almacenamiento 10 días a 0 °, la relación fuerte en Allison (R² = 0.85), Sweet Celebration  (R² = 0.78) 
+Por el contrario, en Sweet Celebration (SC) se observó una relación más estrecha entre ambas variables (R² = 0.90), con una pendiente mayor (y = 2.27x – 50.08). Esto sugiere que en esta variedad el Hue inicial es un predictor más robusto del color final, evidenciando una sensibilidad más marcada a los cambios de tonalidad durante el almacenamiento. La mayor pendiente indica que pequeños incrementos en el Hue inicial se traducen en mayores incrementos en el Hue final en comparación con Allison.
+
+
 
 ```{python}
 #| echo: true
 #| code-fold: true
-#| fig-cap: 'Figura 1. Relacion de Hue (°) en cosecha  y el Hue(°) final despues de almacenamiento ( 10 dias a 0°C)'
+#| fig-cap: 'Figura 1. Relación de Hue (°) en cosecha  y el Hue(°) final despues de almacenamiento (10 días a 0°C)'
 
-# 1. Cargamos archivos 
+# Cargamos archivos 
+# =====================================================================================
 datos_correlacion = pd.read_csv(r'../datos/Pardeamiento uva de mesa.csv', sep=';')
 
 df = pd.DataFrame(datos_correlacion)
-df.columns = df.columns.str.strip() # Normalizar nombres de columnas 
+df.columns = df.columns.str.strip()  # Normalizar nombres de columnas 
 
-#Visualizar las primeras columnas de  df. 
-#print(df.columns)
-#df.info() 
-#df.head()
-
-# 2. Crear un identificador único por racimo
+# Crear un identificador único por racimo
 df['ID'] = (df['Variedad'].astype(str) + '_' +
             df['Productor'].astype(str) + '_' +
             df['Tratamientos'].astype(str) + '_' +
             df['Repeticion'].astype(str) + '_' +
             df['N_Racimo'].astype(str))
 
-# 3. Pivotar para tener columnas separadas
+# Pivotar para tener columnas separadas
 tabla_correlaciones = (
     df.pivot_table(
         index=['Variedad', 'ID'],
@@ -114,57 +109,66 @@ tabla_correlaciones = (
     .round(2)  # redondear a 2 decimales
 )
 
-#Visualizar tabla de correlaciones
-#tabla_correlaciones.head()
-#tabla_correlaciones.info()
-# Colormap personalizado con ayuda de Chatgpt
+# Colormap personalizado
 colors = [
-    (0.8, 0.2, 0.1),   # Rojo degradado (menos saturado, más natural)
+    (0.8, 0.2, 0.1),   # Rojo
     (1.0, 0.5, 0.0),   # Naranja
     (1.0, 1.0, 0.0),   # Amarillo
     (0.7, 1.0, 0.3)    # Verde amarillento
 ]
-cmap_rav = mcolors.LinearSegmentedColormap.from_list("rojo_amarillo_verde", colors, N=256) 
+cmap_rav = mcolors.LinearSegmentedColormap.from_list("rojo_amarillo_verde", colors, N=256)
 
-
-# 4. Crear figura de correlaciones por variedad hus vs hue 
-plt.figure(figsize=(9, 5))
+# Crear figura
+plt.figure(figsize=(8, 5))
 variedades = tabla_correlaciones['Variedad'].unique()
 
-# 5. Colores distintos para las líneas
-colores_linea = ['black', 'blue']
+# Colores distintos para las líneas
+colores_linea = ['black', 'darkblue']
 
-# Correlaciones del T0 y T10
-sc = plt.scatter(tabla_correlaciones['T0'],
-                 tabla_correlaciones['T10'],
-                 c=tabla_correlaciones['T10'], 
-                 cmap=cmap_rav
-)
-# Regresión lineal por variedad
+# Colores de borde por variedad
+colores_borde = {
+    'AL': 'black',
+    'SC': 'darkblue'
+}
+
+# === Scatter con borde por variedad ===
+for variedad in variedades:
+    datos_var = tabla_correlaciones[tabla_correlaciones['Variedad'] == variedad]
+
+    plt.scatter(
+        datos_var['T0'],
+        datos_var['T10'],
+        c=datos_var['T10'],     # color interior
+        cmap=cmap_rav,
+        edgecolors=colores_borde[variedad],  # borde diferenciado
+        linewidth=0.9
+    )
+
+# === Regresión lineal por variedad ===
 for i, variedad in enumerate(variedades):
     datos = tabla_correlaciones[tabla_correlaciones['Variedad'] == variedad]
     X = datos[['T0']].values
     y = datos['T10'].values
     
-    #Regresion linel
     modelo = LinearRegression()
     modelo.fit(X, y)
     y_pred = modelo.predict(X)
 
-    # Calcular R², pendiente, intercepto
     r2 = r2_score(y, y_pred)
     pendiente = modelo.coef_[0]
     intercepto = modelo.intercept_
 
-    # Dibujar la línea de regresión variedad
-    plt.plot(X, y_pred,
-             color=colores_linea[i % len(colores_linea)],
-             lw=2, label=f'{variedad}: y={pendiente:.2f}x+{intercepto:.2f}, (R²={r2:.2f})')
+    plt.plot(
+        X, y_pred,
+        color=colores_linea[i % len(colores_linea)],
+        lw=2,
+        label=f'{variedad}: y={pendiente:.2f}x+{intercepto:.2f}, (R²={r2:.2f})'
+    )
 
-# Etiquetas y formato Grafico
+# Etiquetas y formato
 plt.xlabel('Hue inicial (°) en Cosecha')
 plt.ylabel('Hue final (°) - 10 d a 0° C')
-plt.title('Relacion Hue inicial vs Hue final por variedad', fontsize=13, weight='bold')
+#plt.title('Relacion Hue inicial vs Hue final por variedad', fontsize=13, weight='bold')
 plt.colorbar()
 plt.grid(True)
 plt.legend(frameon=True)
@@ -172,16 +176,21 @@ plt.tight_layout()
 plt.show()
 ```
 
+La relación entre el Contenido Relativo de Agua (CRA) del raquis en cosecha y la intensidad de pardeamiento tras el almacenamiento evidenció un patrón negativo en ambas variedades evaluadas (Figura 2). En Allison (AL), se observó una pendiente descendente (y = –1.52x + 150.11) acompañada de un coeficiente de determinación elevado (R² = 0.91), lo que indica que el CRA inicial explicó en gran proporción la variación del pardeamiento final. Esto sugiere que racimos con menor CRA en el momento de cosecha tendieron a manifestar un pardeamiento más intenso después del período de frío, reflejando una mayor susceptibilidad a la deshidratación y al deterioro tisular.
+
+En Sweet Celebration (SC), la asociación también fue negativa (y = –2.74x + 243.77), aunque con menor ajuste estadístico (R² = 0.73). No obstante, la pendiente más pronunciada en esta variedad indica que pequeñas diferencias en CRA al inicio generan variaciones más drásticas en la intensidad de pardeamiento final en comparación con Allison. Esto refleja una mayor sensibilidad de SC a la pérdida de agua, lo cual concuerda con la respuesta típica observada para genotipos más propensos a presentar daños por deshidratación en poscosecha.
+
+
 ```{python}
 
 #| echo: true
 #| code-fold: true
-#| fig-cap: 'Figura 2. Relacion de acuerdo CRA (%) y el pardeameinto del raquis despues de almacenamiento ( 10 dias a 0°C)'
+#| fig-cap: 'Figura 2. Relación de acuerdo CRA (%) y el pardeameinto del raquis despues de almacenamiento ( 10 dias a 0°C)'
 
+#  Correlacion de acuerdo CRA vs pardeamiento 
 datos_CRA = pd.read_csv(r'../datos/Contenido relativo de agua.csv', sep=';')
-#datos_CRA.info()
 
-#Calculamos el promedio  CAR en T0
+# Calculamos el promedio  CAR en T0
 CRA_promedio_T0 = (
     datos_CRA
     .groupby(['Productor', 'Variedad', 'Color', 'Tratamientos'])['CAR']
@@ -190,12 +199,10 @@ CRA_promedio_T0 = (
     .reset_index()
 )
 
-#Filtrar pardeamiento T10 ---
+# Filtrar pardeamiento T10
 Pardo_t10 = df[df['Tiempo'] == 'T10']
-#print(Pardo_t10.columns)
 
-#Calculamso en promedio pardeamiento T10
-
+# Calculamos el promedio pardeamiento T10
 Pardo_promedio_T10 = (
     Pardo_t10
     .groupby(['Productor', 'Variedad', 'Color', 'Tratamientos'])['Pardo']
@@ -203,14 +210,15 @@ Pardo_promedio_T10 = (
     .round(2)
     .reset_index()
 )
-#Unimos ambos promedio por columnas comunes 
+
+# Unión de los promedios
 CAR_VS_PAR = pd.merge(
     CRA_promedio_T0,
     Pardo_promedio_T10,
     on=['Productor', 'Variedad', 'Color', 'Tratamientos']
 )
 
-
+# Colormap
 colors = [
     (0.7, 1.0, 0.3),   # Verde amarillento
     (1.0, 1.0, 0.0),   # Amarillo
@@ -219,15 +227,33 @@ colors = [
 ]
 cmap_rav1 = mcolors.LinearSegmentedColormap.from_list("verde_a_pardo", colors, N=256)
 
-# --- Crear gráfico de correlación CAR vs Pardo ---
-plt.figure(figsize=(10, 6))
+# Crear gráfico
+plt.figure(figsize=(8, 5))
 variedades = CAR_VS_PAR['Variedad'].unique()
-colores_linea = ['black', 'blue']
 
-# Dispersión global
-sc = plt.scatter(CAR_VS_PAR['CAR'], CAR_VS_PAR['Pardo'], c=CAR_VS_PAR['Pardo'], cmap= cmap_rav1)
+# Colores de línea (puedes cambiarlos si quieres)
+colores_linea = ['black', 'darkblue']
 
-# Regresión lineal por variedad
+# Colores de borde recomendados por variedad
+colores_borde = {
+    'AL': 'black',
+    'SC': 'darkblue'
+}
+
+# === Scatter con borde por variedad ===
+for variedad in variedades:
+    datos_var = CAR_VS_PAR[CAR_VS_PAR['Variedad'] == variedad]
+
+    plt.scatter(
+        datos_var['CAR'],
+        datos_var['Pardo'],
+        c=datos_var['Pardo'],          # color interior por colormap
+        cmap=cmap_rav1,
+        edgecolors=colores_borde[variedad],  # borde diferenciado
+        linewidth=1.2
+    )
+
+# === Regresión lineal por variedad ===
 for i, variedad in enumerate(variedades):
     datos = CAR_VS_PAR[CAR_VS_PAR['Variedad'] == variedad]
     X = datos[['CAR']].values
@@ -241,49 +267,54 @@ for i, variedad in enumerate(variedades):
     pendiente = modelo.coef_[0]
     intercepto = modelo.intercept_
     
-    plt.plot(X, y_pred,
-             color=colores_linea[i % len(colores_linea)],
-             lw=2,
-             label=f'{variedad}: y={pendiente:.2f}x+{intercepto:.2f}, (R²={r2:.2f})')
+    plt.plot(
+        X, y_pred,
+        color=colores_linea[i % len(colores_linea)],
+        lw=2,
+        label=f'{variedad}: y={pendiente:.2f}x+{intercepto:.2f}, (R²={r2:.2f})'
+    )
 
-# --- Formato final ---
+# Formato final
 plt.xlabel('Contenido Relativo de Agua (CRA) en cosecha')
 plt.ylabel('Intensidad del Pardeamiento del raquis (%)')
-plt.title('Relación CRA inicial vs Pardeamiento final por variedad', fontsize=13, weight='bold')
 plt.colorbar()
 plt.grid(alpha=0.4)
 plt.legend(frameon=True)
 plt.tight_layout()
 plt.show()
+
+          
 ```
 
 ### 3. Almacenamiento comercial en poscosecha. 
 
-El pardeamiento del raquis aumentó consistentemente con el tiempo de almacenamiento comercial en ambas variedades evaluadas. ‘Allison’ mostró niveles iniciales más altos y una progresión más marcada del oscurecimiento respecto de ‘Sweet Celebration’. Asimismo, los racimos clasificados con raquis amarillo (A) tendieron a presentar mayor área parda que aquellos con raquis verde (V), lo que confirma la relevancia del color inicial como indicador fisiológico de la sensibilidad al pardeamiento durante la poscosecha.
+La evolución del pardeamiento del raquis durante el almacenamiento comercial mostró patrones contrastantes entre las variedades evaluadas (Figura 3). En Allison (AL), el porcentaje de área parda aumentó de T40 a T43 en ambos colores evaluados, aunque la intensidad del cambio fue mayor en los raquis clasificados como amarillos (A). A los 40 días de almacenamiento (T40), los valores medianos de pardeamiento se ubicaron entre 35–40 %, mientras que a los 43 días (T43) superaron el 50 %, evidenciando un deterioro progresivo del tejido. Los raquis verdes (V) presentaron menores niveles de pardeamiento en ambas fechas, aunque igualmente mostraron un incremento hacia T43.
+
+En Sweet Celebration (SC), el pardeamiento inicial fue marcadamente menor que en AL, con medianas cercanas al 15–20 % en T40 para ambos colores. Sin embargo, al pasar a T43, los raquis amarillos exhibieron un incremento notable, alcanzando valores alrededor de 45–50 %, mientras que los raquis verdes mantuvieron niveles moderados, generalmente por debajo del 30 %. Este comportamiento indica que SC expresa una menor intensidad inicial de pardeamiento, pero puede experimentar aumentos significativos cuando el almacenamiento se prolonga.
 
 ```{python}
 
 #| echo: true
 #| code-fold: true
-#| fig-cap: 'Figura 3. Almacenamiento comercial en poscosecha de acuerdo color inical  de raquis en cosecha'
-# 1. Cargar datos
-# ===================================================
+#| fig-cap: 'Figura 3. Intensidad pardeamineto del raquis en las variedades ‘Allison’ (AL) y ‘Sweet Celebration’ (SC) a los 40 días a 0°C  (T40) y 40 días + 3 días a 20°C (T43) de almacenamiento comercial. Los colores indican la clasificación visual del raquis en cosecha (A = amarillo; V = verde).'
 
-df = pd.read_csv(r'../datos/Almacenamiento comercial.csv', sep= ';')
+
+# Cargar datos
+df = pd.read_csv(r'../datos/Almacenamiento comercial.csv', sep=';')
 df.columns = df.columns.str.strip()
 
-
-# 2. Opcional: ordenar niveles de Tiempo si quieres
+# Orden de niveles de tiempo
 orden_tiempo = ['T40', 'T43']
-
 if set(orden_tiempo).issuperset(df['Tiempo'].unique()):
     df['Tiempo'] = pd.Categorical(df['Tiempo'], categories=orden_tiempo, ordered=True)
 
+# Paleta de colores
+colores = {
+    'A': "#f2f464",   # Amarillo
+    'V': "#29ac29"    # Verde
+}
 
-# 3. Crear boxplot facetado por Variedad
-colores = {'A': "#f2f464", 
-           'V': "#29ac29"}  
-
+# Crear boxplot facetado con tamaño ajustado
 g = sns.catplot(
     data=df,
     kind='box',
@@ -292,40 +323,36 @@ g = sns.catplot(
     hue='Color',
     col='Variedad',
     palette=colores,
-    height=5,
-    aspect=1,
-    fliersize=4,        # tamaño de outliers
+    height=5,          # ← Alto de cada subfigura
+    aspect=1.2,        # ← Relación ancho/alto
+    fliersize=4,
     linewidth=1.2
 )
 
-# Ajusta leyenda fuera del grafico 
-g._legend.set_bbox_to_anchor((1.12, 0.5)) 
+# Ajustar tamaño total de la figura
+g.fig.set_size_inches(7, 5)   
 
-# ===================================================
-# 4. Ajustes finales — Escala Y fija
+# Ajustar leyenda
+g._legend.set_bbox_to_anchor((1.12, 0.5))
 
+# Ajustes finales — Escala Y fija
 for ax in g.axes.flatten():
-    ax.set_ylim(0, 100)  # ← AQUÍ SE FIJA LA ESCALA DE 0 A 100
-    ax.set_ylabel("% Área parda del raquis", fontsize=11)
+    ax.set_ylim(0, 100)
+    ax.set_ylabel("Pardeameinto del raquis (%)", fontsize=11)
     ax.set_xlabel("Tiempo de almacenamiento (días)", fontsize=11)
     ax.tick_params(axis='both', labelsize=10)
-# ===================================================
-# 5. Títulos y estética final
 
+# Título general
 g.fig.suptitle(
-    " Pardeamiento del raquis durante el almacenamiento comercial poscosecha",
-    y=1.05,
+    "Almacenamiento comercial poscosecha",
+    y=1.06,
     fontsize=14,
     fontweight='bold'
 )
 
-for ax in g.axes.flatten():
-    ax.set_ylabel("% Área parda del raquis", fontsize=11)
-    ax.set_xlabel("Tiempo de almacenamiento (días)", fontsize=11)
-    ax.tick_params(axis='both', labelsize=10)
-
 plt.tight_layout()
 plt.show()
+
 ```
 
 ## Conclusiones 

@@ -34,8 +34,6 @@ El repositorio cuenta con dos carpetas principales: Datos y Scripts
 uva-de-mesa-2025/
 ├── README.md
 ├── LICENSE
-├── .gitignore
-├── .nojekyll
 │
 ├── datos/
 │   ├── Almacenamiento comercial.csv
@@ -53,7 +51,6 @@ uva-de-mesa-2025/
 ├── scripts/
 │   ├── pardeamiento_uva.ipynb
 │   ├── pardeamiento_uva.qmd
-│   └── pardeamiento_uva.pdf
 
 ```
 
